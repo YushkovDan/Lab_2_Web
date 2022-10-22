@@ -1,0 +1,16 @@
+def sqr_test(num, a):
+    tochn = 0.0001
+    i = 1
+    while True:
+        i_1=(((a-1)*i)+(num/(i**(a-1))))/a
+        if abs(i_1-i) < tochn:
+            break
+        i = i_1
+    return i_1
+num = float(input('Введите число:'))
+a = int(input('Введите степень:'))
+if num < 0 or a <= 0:
+    print ('Неверные значения')
+    exit()
+print('Корень равен', end=' ')
+print(sqr_test(num,a))
