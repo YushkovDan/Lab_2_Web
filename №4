@@ -1,0 +1,19 @@
+Input: -123
+Output: -321
+Программная реализация задания
+print('Введите число:')
+def rotate(number):
+    rev_number = 0
+    if number <0:
+        minus = -1
+        number = number * -1
+    else:
+        minus = 1
+    while number % 10 == 0:
+        number = number // 10
+    while number:
+        rev_number = rev_number *10 + number % 10
+        number = number // 10
+    rev_number = rev_number * minus
+    return rev_number
+print(rotate(int(input())))
