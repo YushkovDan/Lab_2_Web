@@ -1,0 +1,13 @@
+i = int(input())
+my_list=[]
+for i in range(i):
+    x=int(input())
+    my_list.append(x)
+def division (numbers, divisor):
+    return [num for num in numbers if num % divisor==0]
+print('Делятся на 2:')
+print(division(my_list,2))
+print('Делятся на 3:')
+print(division(my_list,3))
+print('Делятся на 5:')
+print(division(my_list,5))
