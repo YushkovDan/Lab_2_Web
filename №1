@@ -1,0 +1,6 @@
+print('Введите число для проверки:')
+row = int(input())
+def palindrome (n):
+    row = [int(quantity) for quantity  in str (n)]
+    return row == list(reversed(row))
+print(palindrome(row))
